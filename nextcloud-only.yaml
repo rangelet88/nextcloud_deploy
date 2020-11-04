@@ -8,7 +8,7 @@ services:
     environment:
       POSTGRES_DB: nextDB
       POSTGRES_USER: nextuser
-      POSTGRES_PASSWORD: myN3XTpas$
+      POSTGRES_PASSWORD: myN3XTpass
     networks:
       - backend
     deploy:
@@ -32,7 +32,7 @@ services:
     environment:
       POSTGRES_DB: nextDB
       POSTGRES_USER: nextuser
-      POSTGRES_PASSWORD: myN3XTpas$
+      POSTGRES_PASSWORD: myN3XTpass
       POSTGRES_HOST: db:3306
       NEXTCLOUD_ADMIN_USER: admin
       NEXTCLOUD_ADMIN_PASSWORD: admin
