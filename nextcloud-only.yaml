@@ -29,6 +29,8 @@ services:
       - backend
     ports:
       - 8080:80
+    links:
+      - db:db
     environment:
       POSTGRES_DB: nextDB
       POSTGRES_USER: nextuser
